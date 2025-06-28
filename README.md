@@ -3,7 +3,7 @@
 
 A beautiful and fully interactive **Sentiment Analysis App** built using **Streamlit**, hosted via **ngrok** in **Google Colab**. It uses a pre-trained ML model to predict whether user input has a **positive** or **negative** sentiment.
 
-![App Screenshot](https://via.https://github.com/sheheryar-hue/sentimentanalysisapp/blob/main/Screenshot%202025-06-28%20222632.png.com/800x400?text=Sentiment+Analysis+App+Demo)
+![App Screenshot](https://via.https://github.com/sheheryar-hue/sentimentanalysisapp/blob/main/Screenshot%202025-06-28%20222632.png)
 
 ---
 
