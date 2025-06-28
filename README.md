@@ -48,7 +48,7 @@ Paste this in a cell:
 
 ```python
 %%writefile app.py
-# 👇 Paste your full app.py code here, including style + prediction block
+# app.py
 ```
 
 ### ✅ 4. Run Streamlit server in the background
@@ -63,7 +63,7 @@ Paste this in a cell:
 
 ```python
 from pyngrok import ngrok
-ngrok.set_auth_token("your-ngrok-auth-token")  # Replace with your token
+ngrok.set_auth_token("2yxmb7rtM6ndnIPhsvGpxolHVMe_4bEMPb28ZGS9LNXN3kThL") 
 
 public_url = ngrok.connect(8501)
 print("🌍 App is live at:", public_url)
@@ -99,9 +99,9 @@ If anything goes wrong:
 
 ## 👨‍💻 Author
 
-**Sheher Muhd**  
+**MUHAMMAD SHEHARYAR KP**  
 📍 Kozhikode, India  
-🎓 B.Tech AI, KTU University
+B.Tech AD,AWH KUTTIKATTOOR, KTU University
 
 ---
 
