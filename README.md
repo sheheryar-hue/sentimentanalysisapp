@@ -1,0 +1,110 @@
+
+# 🧠 Sentiment Analysis Web App
+
+A beautiful and fully interactive **Sentiment Analysis App** built using **Streamlit**, hosted via **ngrok** in **Google Colab**. It uses a pre-trained ML model to predict whether user input has a **positive** or **negative** sentiment.
+
+![App Screenshot](https://via.placeholder.com/800x400?text=Sentiment+Analysis+App+Demo)
+
+---
+
+## 🚀 Features
+
+- 🎯 Predicts sentiment from raw user text
+- 💡 Real-time input via web interface
+- 🎨 Modern, animated glassmorphic UI
+- 🔊 Audio feedback on predictions
+- 🌐 Accessible from anywhere using ngrok tunnel
+
+---
+
+## 🛠 Requirements
+
+- Google Colab
+- `model.pkl` and `vectorizer.pkl` files
+- Ngrok Auth Token (free from [ngrok.com](https://dashboard.ngrok.com/get-started/setup))
+
+---
+
+## 🔧 How to Launch the App (Google Colab)
+
+> Follow these steps **exactly in order** every time:
+
+### ✅ 1. Install required libraries
+
+```python
+!pip install streamlit pyngrok --quiet
+```
+
+### ✅ 2. Upload your model and vectorizer
+
+```python
+from google.colab import files
+files.upload()  # Upload model.pkl and vectorizer.pkl
+```
+
+### ✅ 3. Save your Streamlit app code
+
+Paste this in a cell:
+
+```python
+%%writefile app.py
+# 👇 Paste your full app.py code here, including style + prediction block
+```
+
+### ✅ 4. Run Streamlit server in the background
+
+```python
+!streamlit run app.py &>/content/logs.txt &
+```
+
+> 🕒 **Wait 5–10 seconds** before continuing to ensure Streamlit is ready.
+
+### ✅ 5. Start Ngrok tunnel
+
+```python
+from pyngrok import ngrok
+ngrok.set_auth_token("your-ngrok-auth-token")  # Replace with your token
+
+public_url = ngrok.connect(8501)
+print("🌍 App is live at:", public_url)
+```
+
+### ✅ 6. Done!
+
+Now click the URL from the output and enjoy your fully working web app.
+
+---
+
+## 🧪 Optional: Debug logs
+
+If anything goes wrong:
+
+```python
+!tail -n 40 /content/logs.txt
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+📂 project/
+│
+├── app.py                  # Streamlit app code
+├── model.pkl               # Trained ML model
+└── vectorizer.pkl          # Text vectorizer (e.g. Tfidf or CountVectorizer)
+```
+
+---
+
+## 👨‍💻 Author
+
+**Sheher Muhd**  
+📍 Kozhikode, India  
+🎓 B.Tech AI, KTU University
+
+---
+
+## 📢 License
+
+MIT License. Free to use and modify.
