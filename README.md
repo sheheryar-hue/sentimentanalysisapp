@@ -82,21 +82,6 @@ If anything goes wrong:
 ```python
 !tail -n 40 /content/logs.txt
 ```
-
----
-
-## 📁 Folder Structure
-
-```
-📂 project/
-│
-├── app.py                  # Streamlit app code
-├── model.pkl               # Trained ML model
-└── vectorizer.pkl          # Text vectorizer (e.g. Tfidf or CountVectorizer)
-```
-
----
-
 ## 👨‍💻 Author
 
 **MUHAMMAD SHEHARYAR KP**  
